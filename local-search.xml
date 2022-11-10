@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>秦子腾测试用例</title>
+    <link href="/2022/11/10/%E7%A7%A6%E5%AD%90%E8%85%BE%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/"/>
+    <url>/2022/11/10/%E7%A7%A6%E5%AD%90%E8%85%BE%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/</url>
+    
+    <content type="html"><![CDATA[<p>1、下载安装源</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.3/aio/deploy/recommended.yaml<br></code></pre></td></tr></table></figure><ul><li>个人建议</li></ul><blockquote><p>11111</p></blockquote><p><img src="D:\MD归档文档\IMG\image-20221110213451073.png" alt="image-20221110213451073"></p><p><a href="www.baidu.com">666</a></p><table><thead><tr><th>1</th><th>1</th><th>1</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>1</td></tr></tbody></table>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>测试用例</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/2022/11/10/hello-world/"/>
+    <url>/2022/11/10/hello-world/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
