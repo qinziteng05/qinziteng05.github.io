@@ -60,7 +60,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"bash"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -70,6 +70,21 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -222,18 +237,24 @@
   <div class="row mx-auto index-card">
     
     
-    <article class="col-12 col-md-12 mx-auto index-info">
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2022/11/11/%E6%9C%AC%E5%9C%B0Yun%E6%BA%90%E6%90%AD%E5%BB%BA%E8%84%9A%E6%9C%AC/" target="_self">
+          <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20200322%2F90ab6e590ed34c5c85ebd620c4a8ae85.jpeg&amp;refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1670729413&amp;t=09d236221aae154666c22b1b7b719647" srcset="/img/loading.gif" lazyload alt="本地Yun源搭建脚本">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/11/10/%E7%A7%A6%E5%AD%90%E8%85%BE%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/" target="_self">
-          秦子腾测试用例
+        <a href="/2022/11/11/%E6%9C%AC%E5%9C%B0Yun%E6%BA%90%E6%90%AD%E5%BB%BA%E8%84%9A%E6%9C%AC/" target="_self">
+          本地Yun源搭建脚本
         </a>
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/11/10/%E7%A7%A6%E5%AD%90%E8%85%BE%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/" target="_self">
+      <a class="index-excerpt " href="/2022/11/11/%E6%9C%AC%E5%9C%B0Yun%E6%BA%90%E6%90%AD%E5%BB%BA%E8%84%9A%E6%9C%AC/" target="_self">
         <div>
-          1、下载安装源 1wget https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.3/aio/deploy/recommended.yaml    个人建议   11111   666    1 1 1    1 1 1
+          说明:  1、上传系统对应的ISO镜像文件到服务器 2、编辑此脚本 指定IsoPath变量位置为 ISO当前位置 3、执行脚本  12345678910111213141516171819202122232425262728293031#!/bin/bash. /etc/init.d/functions# 定义ISO镜像位置IsoPath=/root/CentOS-7-x86_64-DVD-170
         </div>
       </a>
 
@@ -241,8 +262,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-11-10 21:25" pubdate>
-              2022-11-10
+            <time datetime="2022-11-11 11:29" pubdate>
+              2022-11-11
             </time>
           </div>
         
@@ -251,42 +272,9 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/">#测试用例</a>
+              <a href="/tags/Shell/">#Shell</a>
             
           </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/11/10/hello-world/" target="_self">
-          
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/11/10/hello-world/" target="_self">
-        <div>
-          
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-11-10 20:30" pubdate>
-              2022-11-10
-            </time>
-          </div>
-        
-        
         
       </div>
     </article>

@@ -4,32 +4,19 @@
   
   
   <entry>
-    <title>秦子腾测试用例</title>
-    <link href="/2022/11/10/%E7%A7%A6%E5%AD%90%E8%85%BE%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/"/>
-    <url>/2022/11/10/%E7%A7%A6%E5%AD%90%E8%85%BE%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/</url>
+    <title>本地Yun源搭建脚本</title>
+    <link href="/2022/11/11/%E6%9C%AC%E5%9C%B0Yun%E6%BA%90%E6%90%AD%E5%BB%BA%E8%84%9A%E6%9C%AC/"/>
+    <url>/2022/11/11/%E6%9C%AC%E5%9C%B0Yun%E6%BA%90%E6%90%AD%E5%BB%BA%E8%84%9A%E6%9C%AC/</url>
     
-    <content type="html"><![CDATA[<p>1、下载安装源</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.3/aio/deploy/recommended.yaml<br></code></pre></td></tr></table></figure><ul><li>个人建议</li></ul><blockquote><p>11111</p></blockquote><p><img src="D:\MD归档文档\IMG\image-20221110213451073.png" alt="image-20221110213451073"></p><p><a href="www.baidu.com">666</a></p><table><thead><tr><th>1</th><th>1</th><th>1</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>1</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<p>说明:</p><ul><li>1、上传系统对应的ISO镜像文件到服务器</li><li>2、编辑此脚本 指定<code>IsoPath</code>变量位置为 ISO当前位置</li><li>3、执行脚本</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br>. /etc/init.d/functions<br><span class="hljs-comment"># 定义ISO镜像位置</span><br>IsoPath=/root/CentOS-7-x86_64-DVD-1708.iso<br>Time=$(<span class="hljs-built_in">date</span> +%F).bak<br> <br><span class="hljs-function"><span class="hljs-title">Yum</span></span>()&#123;<br><span class="hljs-built_in">mkdir</span> /mnt/centos <br>mount <span class="hljs-variable">$&#123;IsoPath&#125;</span> /mnt/centos<br> <br>(<span class="hljs-built_in">mkdir</span> /etc/yum.repos.d/<span class="hljs-variable">$&#123;Time&#125;</span><br><span class="hljs-built_in">mv</span> /etc/yum.repos.d/* /etc/yum.repos.d/<span class="hljs-variable">$&#123;Time&#125;</span>)<br> <br><br><span class="hljs-built_in">cat</span> &gt;&gt; /etc/yum.repos.d/localhost.repo &lt;&lt;<span class="hljs-string">EOF</span><br><span class="hljs-string">[localhost]</span><br><span class="hljs-string">name=localhost</span><br><span class="hljs-string">baseurl=file:///mnt/centos</span><br><span class="hljs-string">gpgcheck=0</span><br><span class="hljs-string">enabled=1</span><br><span class="hljs-string">EOF</span><br>yum clean all<br>&#125;<br> <br>Yum &amp;&gt;/dev/null<br> <br><span class="hljs-keyword">if</span> (yum -y install bc-1.06.95-13.el7.x86_64 &amp;&gt;/dev/null);<span class="hljs-keyword">then</span><br>action <span class="hljs-string">&quot;Yum:&quot;</span><br><span class="hljs-keyword">else</span><br>action <span class="hljs-string">&quot;Yum:&quot;</span> <span class="hljs-literal">false</span><br><span class="hljs-keyword">fi</span><br></code></pre></td></tr></table></figure>]]></content>
     
     
     
     <tags>
       
-      <tag>测试用例</tag>
+      <tag>Shell</tag>
       
     </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/2022/11/10/hello-world/"/>
-    <url>/2022/11/10/hello-world/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
     
   </entry>
   
